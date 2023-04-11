@@ -1,0 +1,263 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap');
+
+main {
+}
+
+.top {
+  display: flex;
+  flex-direction: row;
+  align-content: center;
+}
+
+.leftSide {
+  display: flex;
+  flex-direction: column;
+  width: 70%;
+  margin-left: 130px;
+  margin-top: 60px;
+}
+
+.rightSide {
+  display: flex;
+  flex-direction: column;
+  width: 50%;
+  margin-left: 125px;
+  margin-top: 60px;
+}
+
+img {
+  width: 75%;
+}
+
+.caption{
+  width: 75%;
+}
+
+header {
+  font-family: 'Inter', san-serif;
+  font-size: 28px;
+  font-weight: 700;
+  color: white;
+  background-color: rgb(66, 145, 152);
+  padding-top: 25px;
+  padding-bottom: 25px;
+  padding-left: 125px;
+}
+
+p {
+  font-family: 'Inter', san-serif;
+  font-size: 16px;
+  font-weight: 400;
+  margin-top: 0px;
+  margin-bottom: 15px;
+}
+
+
+.changeMonth {
+  color: rgb(66, 145, 152);
+  font-weight: 600;
+}
+
+#seeMore, #seeLess {
+  font-family: 'Inter', san-serif;
+  font-weight: 500;
+  font-size: 16px;
+  color: white;
+  background-color: rgb(66, 145, 152);
+  border-style: none;
+  border-radius: 5px;
+  padding-left: 30px;
+  padding-right: 30px;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  margin-top: 10px;
+}
+#buttonChangeMonth, #buttonChangeMonthNot{
+  //background-color: yellow;
+  width: 50%;
+  text-align: start;
+  background-color: white;
+  height: 40px;
+  padding-left: 20px;
+}
+.caption {
+  font-family: 'Inter', san-serif;
+  font-size: 12px;
+  margin-top: 10px;
+}
+
+a {
+  text-decoration: none;
+  color: rgb(120, 199, 227);
+}
+
+/*text{
+  background-color: aquamarine;
+  width: 40px;
+  height: 30px;
+  cursor: pointer;
+}*/
+div.month-year-picker{
+  flex: 1;
+  margin: 0px;
+  padding-bottom: 25px;
+}
+
+/* TO SHOW BUTTON */
+
+.show {
+  display: inline;
+}
+
+.hide {
+  display: none;
+}
+
+#chartContainer {
+  //background-color: yellow; 
+/*   width: 800px; */
+/*   flex: 1; */
+/*   width: 50vw; */
+  width: 45vw;
+  margin-right: 20px;
+}
+
+.bottom {
+  display: flex;
+  flex-direction: row;
+  margin-left: 125px;
+  margin-right: 125px;
+  margin-top: 75px;
+  margin-bottom: 25px;
+  justify-content: space-between;
+}
+
+.bottomRight {
+  display: flex;
+  flex-direction: column;
+  width: 45%;
+}
+
+@media screen and (max-width:900px) {  
+  header {
+    display: flex;
+    justify-content: center;
+    padding-top: 40px;
+    padding-bottom: 40px;
+    padding-left: 0px;
+  }
+
+  .top {
+    flex-direction: column-reverse;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .leftSide {
+    margin-left: 0px;
+    width: 61%;
+    //background-color: yellow;
+    margin-bottom: 70px;
+  }
+
+  .rightSide {
+    margin-left: 0px;
+    margin-top: 25px;
+    width: 61%;
+    //background-color: red;
+  }
+
+  img {
+    margin-top: 50px;
+    width: 100%;
+  }
+
+  .caption{
+    width: 100%;
+  }
+
+  #seeMore, #seeLess {
+    margin-top: 20px;
+  }
+
+  .bottomRight {
+    //background-color: green;
+    width: 61%;
+  }
+  
+  .bottomLeft {
+    //background-color: blue;
+    width: 61%;
+  }
+
+  
+  .bottom {
+    flex-direction: column-reverse;
+    align-items: center;
+    margin-left: 0px;
+    margin-right: 0px;
+  }
+  
+  div.month-year-picker{
+    padding-bottom: 5px;
+  }
+  
+  .changeMonth {
+    margin-top: 40px;
+  }
+  
+  #chartContainer {
+    //background-color: red;
+    //height: 300px;
+    width: 450px;
+    margin-top: 100px;
+    margin-bottom: 50px;
+  }
+/*
+  #chartContent {
+    width: 500px;
+    margin-top: 150px;
+  }
+ */ 
+}
+
+@media screen and (max-width:480px) {
+  header{
+    text-align: center;
+    padding-left: 60px;
+    padding-right: 60px;
+  }
+  
+  #chartContainer {
+    margin-top: 100px;
+    width: 100%;
+    height: 100%;
+  }
+
+  .leftSide {
+    margin-top: 0px;
+    margin-bottom: 0px;
+    //background-color: yellow;
+    width: 70%;
+  }
+
+  .rightSide {
+    width: 70%;
+  }
+
+  .bottomLeft {
+    width: 70%;
+  }
+
+  .caption {
+    margin-bottom: 30px;
+  }
+  .bottomRight {
+    width: 70%;
+  }
+
+  #seeLess {
+    margin-top: 15px;
+    margin-bottom: 25px;
+  }
+}
